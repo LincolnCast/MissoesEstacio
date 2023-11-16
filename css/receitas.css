@@ -1,0 +1,107 @@
+html, body {
+    height: 90%;
+    margin: 0;
+}
+
+body {
+   background-color: #f0947c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Estilos responsivos */
+@media only screen and (max-width: 100%) {
+}
+
+/* conteúdo Barra de Menu*/
+.menu {
+   background-color: #050505;
+   width: 70%;
+   height: 40px;
+}
+
+.menu-list {
+   list-style-type: none;
+   margin: 10px;
+   padding: 10px;
+   display: flex;
+ }
+ 
+ .menu-item {
+   margin: 0 10px;
+   margin-top: 1em;
+ }
+ 
+ .menu-item a {
+   text-decoration: none;
+   color: #fffcfc;
+   font-weight: bold;
+ }
+
+ /* conteúdo das Receitas*/ 
+ .menu {
+   padding: 1px;
+   position: fixed;
+   top: 0;
+   left: 10;
+   width: 100%;
+}
+
+.menu-list {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.menu-item a {
+   text-decoration: none;
+   color: #f8f2f2;
+}
+
+.painel {
+   display: flex;
+   justify-content: space-between;
+   margin: 1em;
+   margin: 10px;
+   padding: 10px;
+}
+
+.painel-item {
+   flex-basis: 80%;
+   margin-bottom: 0;
+}
+
+.painel-item {
+   flex-basis: 31%;
+   padding: 10px;
+   background-color: #d6d1d1;
+   text-align: center;
+}
+
+img {
+   width: 100%;
+}
+ 
+.preparo {
+   text-align: left;
+   letter-spacing: 0.08em;
+}
+
+.ingredientes {
+   text-align: left;
+   letter-spacing: 0.08em;
+}
+
+/* conteúdo Rodapé */
+footer {
+    background-color: #050505;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* altura do rodapé */
+}
