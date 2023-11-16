@@ -65,12 +65,14 @@ body {
    display: flex;
    justify-content: space-between;
    margin: 1em;
-   margin: 10px;
+   margin-top: 60px;
    padding: 10px;
 }
 
 .painel-item {
    flex-basis: 80%;
+   padding: 10px;
+   margin-top: 10px;
    margin-bottom: 0;
 }
 

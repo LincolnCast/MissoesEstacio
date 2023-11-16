@@ -8,7 +8,7 @@ body {
  @media only screen and (max-width: 100%) {
  }
  
- /* conteúdo Barra de Menu */
+ /* Menu */
  .menu {
     background-color: #050505;
     width: 100%;
@@ -34,7 +34,7 @@ body {
   }
   
  
- /* conteúdo da página home */
+ /* home */
  .conteudo {
     
     display: flex;
@@ -63,7 +63,7 @@ body {
     margin-top: 10px;
   }
  
- /* conteúdo da página cadastro */
+ /* cadastro */
  label {
     padding-right: 7em;
     width: 0%;
@@ -84,14 +84,12 @@ body {
     margin-left: 0em;
  }
  
- /* conteúdo Botão */
- 
  .btn {
     margin-left: 6em;
  }
  
  
- /* conteúdo Rodapé */
+ /* Rodapé */
  footer {
     background-color: #050505;
     color: #fff;
@@ -99,5 +97,6 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 30px; /* altura do rodapé */
+    /* altura */
+    height: 30px;
  }
