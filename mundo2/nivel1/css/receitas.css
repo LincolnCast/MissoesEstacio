@@ -87,18 +87,18 @@ body {
 img {
    width: 100%;
 }
- 
-.preparo {
-   text-align: left;
-   letter-spacing: 0.08em;
-}
 
 .ingredientes {
    text-align: left;
    letter-spacing: 0.08em;
 }
 
-/* conteúdo Rodapé */
+.preparo {
+   text-align: left;
+   letter-spacing: 0.08em;
+}
+
+/* Rodapé */
 footer {
     background-color: #050505;
     color: #fff;
@@ -106,5 +106,5 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 50px; /* altura do rodapé */
+    height: 50px;
 }
