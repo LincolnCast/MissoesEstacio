@@ -17,16 +17,17 @@ body {
 }
 
 /* conteúdo Barra de Menu*/
-.menu {
+ /* Menu */
+ .menu {
    background-color: #050505;
-   width: 70%;
+   width: 100%;
    height: 40px;
 }
 
 .menu-list {
    list-style-type: none;
-   margin: 10px;
-   padding: 10px;
+   margin: 0;
+   padding: 0;
    display: flex;
  }
  
@@ -37,11 +38,11 @@ body {
  
  .menu-item a {
    text-decoration: none;
-   color: #fffcfc;
+   color: #d6d1d142;
    font-weight: bold;
  }
 
- /* conteúdo das Receitas*/ 
+ /* conteúdo das Receitas */
  .menu {
    padding: 1px;
    position: fixed;
