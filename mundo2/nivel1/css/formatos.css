@@ -14,12 +14,12 @@ html, body {
  
  .menu1 {
     background-color: #050505;
-    padding: 1px;
+    padding: 0;
     position: fixed;
     top: 0;
     left: 10;
     width: 100%;
-    height: 50px;
+    height: 35px;
  }
  
  .menu1-list {
@@ -43,9 +43,9 @@ html, body {
  /* Menu */
 .menu {
    background-color: #050505;
-   padding: 1px;
+   padding: 0;
    position: fixed;
-   top: 50px;
+   top: 35px;
    left: 10;
    width: 100%;
    height: 50px;
