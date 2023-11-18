@@ -12,7 +12,7 @@ html, body {
  @media only screen and (max-width: 100%) {
  }
  
- /*.navbar {
+ .nav {
     background-color: #050505;
     padding: 0;
     position: fixed;
@@ -22,23 +22,23 @@ html, body {
     height: 35px;
  }
  
- .menu1-list {
+ .nav-item {
     list-style-type: none;
     display: flex;
     margin: 0;
     padding: 0;
  }
  
- .menu1-item {
+ .nav-link {
     margin: 0 10px;
-    margin-top: 1em;
+    margin-top: 0;
  }
  
- .menu1-item a {
+ .nav-link a {
     text-decoration: none;
     color: #d6d1d1;
     font-weight: bold;
- }*/
+ }
 
  /* Menu */
 .menu {
