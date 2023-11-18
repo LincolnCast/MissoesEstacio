@@ -12,7 +12,7 @@ html, body {
  @media only screen and (max-width: 100%) {
  }
  
- .menu1 {
+ /*.navbar {
     background-color: #050505;
     padding: 0;
     position: fixed;
@@ -38,7 +38,7 @@ html, body {
     text-decoration: none;
     color: #d6d1d1;
     font-weight: bold;
- }
+ }*/
 
  /* Menu */
 .menu {
