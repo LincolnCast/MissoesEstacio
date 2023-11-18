@@ -1,5 +1,4 @@
 html, body {
-    background-color: #f0947c;
     height: 100%;
     margin: 0;
     display: flex;
@@ -44,36 +43,6 @@ html, body {
     background-color: bisque;
  }
 
- /* Menu */
-.menu {
-   background-color: #050505;
-   padding: 0;
-   position: fixed;
-   top: 35px;
-   left: 10;
-   width: 100%;
-   height: 50px;
-}
-
-.menu-list {
-   list-style-type: none;
-   display: flex;
-   margin: 0;
-   padding: 0;
-}
-
-.menu-item {
-   margin: 0 10px;
-   margin-top: 1em;
-}
-
-.menu-item a {
-   text-decoration: none;
-   color: #d6d1d1;
-   font-weight: bold;
-}
-
-/* Home */
 .conteudo {
     
     display: flex;
@@ -81,52 +50,22 @@ html, body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-left: 10px;
-    margin-top: 180px;
 }
   
 .titulo-imagem {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    margin: 10px;
 }
   
 .titulo-pagina {
-    font-size: 30px; 
-    margin-left: 30px;
+    font-size: 25px;
 }
   
 .descricao-pagina {
-    font-size: 30px;
-    margin-top: 10px;
+    font-size: 25px;
 }
- 
- /* cadastro */
-label {
-    padding-right: 7em;
-    width: 0%;
-}
- 
-.col-md-14{
-    display: flex;
-    padding-top: 0.4em;
-    width: 100%;  
-}
- 
-.col-md-6{
-    display: flex;
-    padding-top: 0.4em;
-}
- 
-.container{
-    margin-left: 0em;
-}
- 
-.btn {
-    margin-left: 6em;
-}
- 
  
 /* Rodapé */
 footer {
