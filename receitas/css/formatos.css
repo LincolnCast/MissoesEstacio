@@ -1,15 +1,15 @@
-html, body {
+body {
       background-color: #f0947c;
       height: 100%;
       margin: 0;
-      display: flex;
+      display: flex-start;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
 }
 
 html{
-      scroll-behavior:smooth;
+      scroll-behavior: smooth;
 }
 
 * {
@@ -88,14 +88,13 @@ html{
 }
 
 /* Conteudo da Home */
-.conteudo {    
+.conteudo {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      margin-left: 10px;
-      margin-top: 180px;
+      justify-items: stretch;
+      margin: 100px 10px 10px 10px;
 }
   
 .titulo-imagem {
@@ -111,16 +110,25 @@ html{
 }
   
 .titulo-pagina {
-      font-size: 30px; 
-      margin-left: 30px;
+      text-align: center;
+      font-size: 50px;
 }
   
 .descricao-pagina {
+      text-align: center;
       font-size: 30px;
       margin-top: 10px;
 }
  
  /* Formulario do cadastro */
+ .container{
+      overflow-y: 60px calc(100vh - 100px) 25px;
+      max-width: 1200px;
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+}
+
 label {
       padding-right: 7em;
       width: 0%;
@@ -135,14 +143,11 @@ label {
 .col-md-6{
       display: flex;
       padding-top: 0.4em;
+      width: 50%;
 }
- 
-.container{
-      margin-left: 0em;
-}
- 
+
 .btn {
-      margin-left: 6em;
+      align-self: center;
 }
  
 /* Rodapé das paginas */

@@ -2,25 +2,23 @@
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* Responsividade */
-@media only screen and (max-width: 100%) {
-}
-
 .painel {
+   max-width: 1200px;
+   margin: 10px 20px;
    display: flex;
-   justify-content:space-evenly;
    flex-wrap: wrap;
-   gap: 15px;
-   margin: 0 auto;
-   padding: 20px 25px;
+   justify-content:space-between;
+   align-items: stretch;
+   justify-items: center;
+   gap: 10px;
+   padding: 10px 20px;
 }
 
 .painel-item {
-   flex-basis: auto;
-   width: 350px;
+   margin: 70px 20px;
+   flex: 1 1 300px;
    background-color: #e8ddb3;
-   padding: 10px;
-   /*margin: 10px;*/
+   padding: 20px 20px;
    border-radius: 10px;
    text-align: center;
 }
@@ -33,10 +31,14 @@
 }*/
 
 img {
-   width: 50%;
+   width: 100%;
+   border: solid 1px #000;
+   border-radius: 50px;
+   box-shadow: 1px 3px 10px #0000007e;
 }
 
 .ingredientes {
+   padding-top: 20px;
    text-align: left;
    letter-spacing: 0.08em;
 }
