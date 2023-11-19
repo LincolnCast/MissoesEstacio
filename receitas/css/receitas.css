@@ -1,110 +1,39 @@
-html, body {
-    background-color: #f0947c;
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.painel *{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* Estilos responsivos */
+/* Responsividade */
 @media only screen and (max-width: 100%) {
-}
-
- /* Menu missoes */
- .nav {
-   background-color: #050505;
-   padding: 0;
-   position: fixed;
-   top: 0;
-   left: 10;
-   width: 100%;
-   height: 35px;
-}
-
-.nav-list {
-   list-style-type: none;
-   display: flex;
-   margin: 0;
-   padding: 0;
-}
-
-.nav-item {
-   margin: 10px;
-   margin-top: 0;
-}
-
-.nav-item a {
-   text-decoration: none;
-   font-weight: bolder;
-}
-
-.nav-item a:hover {
-   text-decoration: none;
-   color: rgb(3, 104, 255);
-   font-weight: normal;
-}
-
-/* Menu */
-.menu {
-  background-color: #050505;
-  padding: 0;
-  position: fixed;
-  top: 35px;
-  left: 10;
-  width: 100%;
-  height: 50px;
-}
-
-.menu-list {
-  list-style-type: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.menu-item {
-  margin: 0 10px;
-  margin-top: 1em;
-}
-
-.menu-item a {
-  text-decoration: none;
-  color: #d6d1d1;
-  font-weight: bold;
-}
-
-.menu-item a:hover {
-   text-decoration: underline;
-   color: #636262;
-   font-weight: normal;
 }
 
 .painel {
    display: flex;
-   justify-content: space-between;
-   margin: 1em;
-   margin-top: 40px;
-   padding: 10px;
+   justify-content:space-evenly;
+   flex-wrap: wrap;
+   gap: 15px;
+   margin: 0 auto;
+   padding: 20px 25px;
 }
 
 .painel-item {
-   flex-basis: 80%;
-   padding: 10px;
-   margin-bottom: 0;
-}
-
-.painel-item {
-   flex-basis: 31%;
-   padding: 10px;
+   flex-basis: auto;
+   width: 350px;
    background-color: #e8ddb3;
-   text-align: center;
+   padding: 10px;
+   /*margin: 10px;*/
    border-radius: 10px;
+   text-align: center;
 }
+
+/*.painel-item {
+   flex-basis: 31%;
+   padding: 0;
+   background-color: #e8ddb3;
+   
+}*/
 
 img {
-   width: 100%;
+   width: 50%;
 }
 
 .ingredientes {
@@ -115,15 +44,4 @@ img {
 .preparo {
    text-align: left;
    letter-spacing: 0.08em;
-}
-
-/* Rodapé */
-footer {
-    background-color: #050505;
-    color: #fff;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
 }

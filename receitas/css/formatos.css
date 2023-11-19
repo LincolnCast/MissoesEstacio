@@ -1,152 +1,162 @@
 html, body {
-    background-color: #f0947c;
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
- }
+      background-color: #f0947c;
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+html{
+      scroll-behavior:smooth;
+}
+
+* {
+      font-family: 'Times New Roman', Times, serif;
+}
 
  /* Responsividade */
- @media only screen and (max-width: 100%) {
- }
+@media only screen and (max-width: 100%) {}
  
  /* Menu missoes (fora da missão)*/
- .nav {
-   background-color: #050505;
-   padding: 0;
-   position: fixed;
-   top: 0;
-   left: 10;
-   width: 100%;
-   height: 35px;
+.nav {
+      background-color: #050505;
+      padding: 0;
+      position: fixed;
+      top: 0;
+      left: 10;
+      width: 100%;
+      height: 35px;
 }
 
 .nav-list {
-   list-style-type: none;
-   display: flex;
-   margin: 0;
-   padding: 0;
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
 }
 
 .nav-item {
-   margin: 10px;
-   margin-top: 0;
+      margin: 10px;
+      margin-top: 0;
 }
 
 .nav-item a {
-   text-decoration: none;
-   font-weight: bolder;
+      text-decoration: none;
+      font-weight: bolder;
 }
 
 .nav-item a:hover {
-   text-decoration: none;
-   color: rgb(3, 104, 255);
-   font-weight: normal;
+      text-decoration: none;
+      color: rgb(3, 104, 255);
+      font-weight: normal;
 }
 
- /* Menu da home e cadastro*/
+ /* Menu das paginas*/
 .menu {
-   background-color: #050505;
-   padding: 0;
-   position: fixed;
-   top: 35px;
-   left: 10;
-   width: 100%;
-   height: 50px;
+      background-color: #050505;
+      padding: 0;
+      position: fixed;
+      top: 35px;
+      left: 10;
+      width: 100%;
+      height: 35px;
 }
 
 .menu-list {
-   list-style-type: none;
-   display: flex;
-   margin: 0;
-   padding: 0;
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
 }
 
 .menu-item {
-   margin: 10px;
-   margin-top: 1em;
+      margin: 10px;
 }
 
 .menu-item a {
-   text-decoration: none;
-   color: #d6d1d1;
-   font-weight: bold;
+      text-decoration: none;
+      color: #d6d1d1;
+      font-weight: bold;
 }
 
 .menu-item a:hover {
-   text-decoration: underline;
-   color: #636262;
-   font-weight: normal;
+      text-decoration: underline;
+      color: #636262;
+      font-weight: normal;
 }
 
-/* Home */
-.conteudo {
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-left: 10px;
-    margin-top: 180px;
+/* Conteudo da Home */
+.conteudo {    
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-left: 10px;
+      margin-top: 180px;
 }
   
 .titulo-imagem {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
 }
 
 .imagem-titulo {
-   height: 50px;
-   width: 50px;
+      height: 50px;
+      width: 50px;
 }
   
 .titulo-pagina {
-    font-size: 30px; 
-    margin-left: 30px;
+      font-size: 30px; 
+      margin-left: 30px;
 }
   
 .descricao-pagina {
-    font-size: 30px;
-    margin-top: 10px;
+      font-size: 30px;
+      margin-top: 10px;
 }
  
- /* cadastro */
+ /* Formulario do cadastro */
 label {
-    padding-right: 7em;
-    width: 0%;
+      padding-right: 7em;
+      width: 0%;
 }
  
 .col-md-14{
-    display: flex;
-    padding-top: 0.4em;
-    width: 100%;  
+      display: flex;
+      padding-top: 0.4em;
+      width: 100%;  
 }
  
 .col-md-6{
-    display: flex;
-    padding-top: 0.4em;
+      display: flex;
+      padding-top: 0.4em;
 }
  
 .container{
-    margin-left: 0em;
+      margin-left: 0em;
 }
  
 .btn {
-    margin-left: 6em;
+      margin-left: 6em;
 }
  
-/* Rodapé da home e do cadastro */
+/* Rodapé das paginas */
 footer {
-   background-color: #050505;
-   color: #fff;
-   text-align: center;
-   position: absolute;
-   bottom: 0;
-   width: 100%;
-   height: 50px;
+      margin: 0;
+      background-color: #050505;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 50px;
+}
+
+footer p {
+      margin: 10px;
+      color: #fff;
+      text-align: center;
 }
