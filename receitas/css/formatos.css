@@ -8,11 +8,11 @@ html, body {
     align-items: center;
  }
 
- /* Estilos responsivos */
+ /* Responsividade */
  @media only screen and (max-width: 100%) {
  }
  
- /* Menu missoes */
+ /* Menu missoes (fora da missão)*/
  .nav {
    background-color: #050505;
    padding: 0;
@@ -23,25 +23,30 @@ html, body {
    height: 35px;
 }
 
-.nav-item {
+.nav-list {
    list-style-type: none;
    display: flex;
    margin: 0;
    padding: 0;
 }
 
-.nav-link {
-   margin: 0 10px;
+.nav-item {
+   margin: 10px;
    margin-top: 0;
 }
 
-.nav-link a {
+.nav-item a {
    text-decoration: none;
-   color: #d6d1d1;
-   font-weight: bold;
+   font-weight: bolder;
 }
 
- /* Menu */
+.nav-item a:hover {
+   text-decoration: none;
+   color: rgb(3, 104, 255);
+   font-weight: normal;
+}
+
+ /* Menu da home e cadastro*/
 .menu {
    background-color: #050505;
    padding: 0;
@@ -60,7 +65,7 @@ html, body {
 }
 
 .menu-item {
-   margin: 0 10px;
+   margin: 10px;
    margin-top: 1em;
 }
 
@@ -68,6 +73,12 @@ html, body {
    text-decoration: none;
    color: #d6d1d1;
    font-weight: bold;
+}
+
+.menu-item a:hover {
+   text-decoration: underline;
+   color: #636262;
+   font-weight: normal;
 }
 
 /* Home */
@@ -87,6 +98,11 @@ html, body {
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
+}
+
+.imagem-titulo {
+   height: 50px;
+   width: 50px;
 }
   
 .titulo-pagina {
@@ -124,8 +140,7 @@ label {
     margin-left: 6em;
 }
  
- 
-/* Rodapé */
+/* Rodapé da home e do cadastro */
 footer {
    background-color: #050505;
    color: #fff;

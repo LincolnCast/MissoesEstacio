@@ -12,39 +12,43 @@ html, body {
  }
  
  .nav {
-    background-color: #050505;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    left: 10;
-    width: 100%;
-    height: 35px;
- }
- 
- .nav-item {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
- }
- 
- .nav-link {
-    margin: 0 10px;
-    margin-top: 0;
- }
- 
- .nav-link a {
-    text-decoration: none;
-    color: #d6d1d1;
-    font-weight: bold;
- }
+   background-color: #050505;
+   padding: 0;
+   position: fixed;
+   top: 0;
+   left: 10;
+   width: 100%;
+   height: 35px;
+}
+
+.nav-list {
+   list-style-type: none;
+   display: flex;
+   margin: 0;
+   padding: 0;
+}
+
+.nav-item {
+   margin: 10px;
+   margin-top: 0;
+}
+
+.nav-item a {
+   text-decoration: none;
+   font-weight: bolder;
+}
+
+.nav-item a:hover {
+   text-decoration: none;
+   color: rgb(3, 104, 255);
+   font-weight: normal;
+}
 
  .Boby-xl{
     background-color: bisque;
  }
 
-.conteudo {
-    
+.conteudo { 
     display: flex;
     flex-direction: column;
     align-items: center;

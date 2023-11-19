@@ -23,22 +23,27 @@ html, body {
    height: 35px;
 }
 
-.nav-item {
+.nav-list {
    list-style-type: none;
    display: flex;
    margin: 0;
    padding: 0;
 }
 
-.nav-link {
-   margin: 0 10px;
+.nav-item {
+   margin: 10px;
    margin-top: 0;
 }
 
-.nav-link a {
+.nav-item a {
    text-decoration: none;
-   color: #d6d1d1;
-   font-weight: bold;
+   font-weight: bolder;
+}
+
+.nav-item a:hover {
+   text-decoration: none;
+   color: rgb(3, 104, 255);
+   font-weight: normal;
 }
 
 /* Menu */
@@ -68,6 +73,12 @@ html, body {
   text-decoration: none;
   color: #d6d1d1;
   font-weight: bold;
+}
+
+.menu-item a:hover {
+   text-decoration: underline;
+   color: #636262;
+   font-weight: normal;
 }
 
 .painel {
