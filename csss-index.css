@@ -39,7 +39,7 @@ body {
 }
 
 .conteudo {
-    align-self: center; 
+    margin-top: 100px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,7 +47,7 @@ body {
 }
   
 .titulo-imagem {
-    align-content: center;
+    align-items: center;
     margin: 10px;
 }
   

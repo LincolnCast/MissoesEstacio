@@ -1,15 +1,11 @@
-body {
+html, body {
       background-color: #f0947c;
       height: 100%;
-      margin: 0;
-      display: flex-start;
+      width: 100%;
+      /*display: block;
       flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-}
-
-html{
-      scroll-behavior: smooth;
+      justify-content: space-between;
+      align-items: stretch;*/
 }
 
 * {
@@ -89,12 +85,12 @@ html{
 
 /* Conteudo da Home */
 .conteudo {
+      height: 100%;
+      width: 100%;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-content: stretch;
       justify-content: center;
-      justify-items: stretch;
-      margin: 100px 10px 10px 10px;
 }
   
 .titulo-imagem {
@@ -121,12 +117,33 @@ html{
 }
  
  /* Formulario do cadastro */
- .container{
-      overflow-y: 60px calc(100vh - 100px) 25px;
-      max-width: 1200px;
+ main {
+      margin-top: 70px;
+      width: 100%;
       display: flex;
+      flex-direction: column;
+      align-content: center;
       justify-content: space-between;
-      margin: 0;
+ }
+
+ .container{
+      /*overflow-y: 60px calc(100vh - 100px) 25px;*/
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 0 auto;
+}
+.titulo-cadastro{
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+#dados{
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
 }
 
 label {
@@ -147,7 +164,7 @@ label {
 }
 
 .btn {
-      align-self: center;
+      align-self: flex-end;
 }
  
 /* Rodapé das paginas */

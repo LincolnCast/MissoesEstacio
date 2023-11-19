@@ -1,9 +1,10 @@
 .painel *{
+   align-items: center;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .painel {
-   max-width: 1200px;
+   width: 100%;
    margin: 10px 20px;
    display: flex;
    flex-wrap: wrap;
@@ -16,7 +17,7 @@
 
 .painel-item {
    margin: 70px 20px;
-   flex: 1 1 300px;
+   flex: 1 1 200px;
    background-color: #e8ddb3;
    padding: 20px 20px;
    border-radius: 10px;
