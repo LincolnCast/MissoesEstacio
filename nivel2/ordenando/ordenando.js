@@ -5,7 +5,7 @@ const swap = (Array, pos1, pos2) => {
 const shuffle = (Array, numSwaps) => {
     const length = Array.length;
 
-    for (let i = 0; i < numSwaps; i++){
+    for(let i = 0; i < numSwaps; i++){
         const pos1 = Math.floor(Math.random() * length);
         const pos2 = Math.floor(Math.random() * length);
         swap(Array, pos1, pos2);
@@ -15,10 +15,10 @@ const shuffle = (Array, numSwaps) => {
 const bubble_sort = (Array) => {
     const length = Array.length;
 
-    for (let i = 0; i < length - 1; i++){
-        for (let j = 0; j < length - 1 - i; j++){
-            if (Array[j] > Array[j + 1]){
-                swap (Array, j, j + 1);
+    for(let i = 0; i < length - 1; i++){
+        for(let j = 0; j < length - 1 - i; j++){
+            if(Array[j] > Array[j + 1]){
+                swap(Array, j, j + 1);
             }
         }
     }
@@ -27,23 +27,23 @@ const bubble_sort = (Array) => {
 const selection_sort = (Array) => {
     const length = Array.length;
 
-    for (let i = 0; i < length - 1; i++){
+    for(let i = 0; i < length - 1; i++){
         let minIndex = i;
 
-        for (let j = i + 1; j < length; j++){
-            if (Array[j] < Array[minIndex]) {
+        for(let j = i + 1; j < length; j++){
+            if(Array[j] < Array[minIndex]) {
                 minIndex = j;
             }
         }
 
-        if (minIndex !== i){
-            swap (Array, i, minIndex);
+        if(minIndex !== i){
+            swap(Array, i, minIndex);
         }
     }
 };
 
 const quick_sort = (Array, start, end) => {
-    if (start < end) {
+    if(start < end) {
         const pivotIndex = particionamento(Array, start, end);
         quick_sort(Array, start, pivotIndex - 1);
         quick_sort(Array, pivotIndex + 1, end);
@@ -54,8 +54,8 @@ const particionamento = (Array, start, end) => {
     const pivot = Array[end];
     let i = start - 1;
 
-    for (let j = start; j < end; j++) {
-        if (Array[j] < pivot) {
+    for(let j = start; j < end; j++) {
+        if(Array[j] < pivot) {
             i++;
             swap(Array, i, j);
         }
@@ -79,7 +79,7 @@ function add() {
 function ordenar() {
     const listaValores = document.getElementById("valores");
     const listaSelecao = document.getElementById("algoritmo");
-    const vetor = Array.from(listaValores.children).map(item => parseInt(eval(item.innerHTML)));
+    const vetor = Array.from(listaValores.children) .map(item => parseInt(eval(item.innerHTML)));
 
     const selectedIndex = listaSelecao.selectedIndex;
     let algoritmo;
@@ -100,18 +100,18 @@ function ordenar() {
 
     algoritmo(vetor);
 
-    const itensLista = vetor.map(item => '<li>${item}</li>').reduce((acumulador, item) => acumulador + item);
+    const itensLista = vetor.map(item => `<li>${item}</li>`).reduce((acumulador, item) => acumulador + item);
 
     listaValores.innerHTML = itensLista;
 }
 
-function misturar () {
+function misturar() {   
     const listaValores = document.getElementById("valores");
-    const vetor = Array.from(listaValores.children).map(item => parseInt(eval(item.innerHTML)));
+    const vetor = Array.from(listaValores.children) .map(item => parseInt(eval (item.innerHTML)));
 
     shuffle (vetor, vetor.length * 2);
 
-    const itensLista = vetor.map(item => '<li>${item}</li>').reduce((acumulador,item) => acumulador + item);
+    const itensLista = vetor.map(item => `<li>${item}</li>`).reduce((acumulador,item) => acumulador + item);
 
     listaValores.innerHTML = itensLista;
 }
