@@ -1,11 +1,7 @@
 html, body {
       background-color: #f0947c;
-      height: 100%;
+      height: 95%;
       width: 100%;
-      /*display: block;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: stretch;*/
 }
 
 * {
@@ -13,7 +9,9 @@ html, body {
 }
 
  /* Responsividade */
-@media only screen and (max-width: 100%) {}
+@media only screen and (max-width: 100%) {
+
+}
  
  /* Menu missoes (fora da missão)*/
 .nav {
@@ -128,44 +126,40 @@ html, body {
 }
  
  /* Formulario do cadastro */
- main {
+form {
       margin-top: 70px;
       width: 100%;
       display: flex;
       flex-direction: column;
       align-content: center;
       justify-content: space-between;
- }
-
- .container{
-      /*overflow-y: 60px calc(100vh - 100px) 25px;*/
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      margin: 0 auto;
 }
+
 .titulo-cadastro{
       margin-top: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
 }
-#dados{
+
+
+.container{
+      width: 70%;
       display: flex;
       flex-direction: column;
-      margin: 10px;
-}
-
-label {
-      padding-right: 7em;
-      width: 0%;
+      justify-content: space-between;
+      margin: 0 auto;
 }
  
 .col-md-14{
       display: flex;
       padding-top: 0.4em;
       width: 100%;  
+}
+
+label {
+      padding-right: 7em;
+      width: 0%;
 }
  
 .col-md-6{
@@ -175,6 +169,7 @@ label {
 }
 
 .btn {
+      margin: 10px 0px;
       align-self: flex-end;
 }
  
