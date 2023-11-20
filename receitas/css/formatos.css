@@ -71,6 +71,17 @@ html, body {
       margin: 10px;
 }
 
+.menu-item-ativo {
+      margin: 10px;
+}
+
+.menu-item-ativo a {
+      margin-bottom: 0;
+      color: #d6d1d1;
+      text-decoration: underline;
+      font-weight: normal;
+}
+
 .menu-item a {
       text-decoration: none;
       color: #d6d1d1;
@@ -80,12 +91,6 @@ html, body {
 .menu-item a:hover {
       text-decoration: underline;
       color: #636262;
-      font-weight: normal;
-}
-
-.menu-item-active a {
-      text-decoration: underline;
-      color: #2828b5;
       font-weight: normal;
 }
 
