@@ -50,7 +50,20 @@ const quick_sort = (Array, start, end) => {
     }
 };
 
+const particionamento = (Array, start, end) => {
+    const pivot = Array[end];
+    let i = start - 1;
 
+    for (let j = start; j < end; j++) {
+        if (Array[j] < pivot) {
+            i++;
+            swap(Array, i, j);
+        }
+    }
+
+    swap(Array, i + 1, end);
+    return i + 1;
+};
 
 function add() {
     const input = document.getElementById("Valor");
