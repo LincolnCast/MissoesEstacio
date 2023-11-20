@@ -73,13 +73,6 @@ html, body {
       margin: 10px;
 }
 
-.menu-item-ativo a {
-      margin-bottom: 0;
-      color: #d6d1d1;
-      text-decoration: underline;
-      font-weight: normal;
-}
-
 .menu-item a {
       text-decoration: none;
       color: #d6d1d1;
@@ -92,9 +85,16 @@ html, body {
       font-weight: normal;
 }
 
+.active {
+      margin-bottom: 0;
+      color: #d6d1d1;
+      text-decoration: underline;
+      font-weight: normal;
+}
+
 /* Conteudo da Home */
 .conteudo {
-      height: 100%;
+      height: calc(100vh - 100px);
       width: 100%;
       display: flex;
       flex-direction: column;
