@@ -83,6 +83,12 @@ html, body {
       font-weight: normal;
 }
 
+.menu-item-active a {
+      text-decoration: underline;
+      color: #2828b5;
+      font-weight: normal;
+}
+
 /* Conteudo da Home */
 .conteudo {
       height: 100%;
