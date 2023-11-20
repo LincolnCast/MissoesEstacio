@@ -42,15 +42,15 @@ const selection_sort = (Array) => {
     }
 };
 
-const quick_sort = (Array, start, end) => {
+const quick_sort = (Array, start, end) {
     if(start < end) {
-        const pivotIndex = particionamento(Array, start, end);
+        let pivotIndex = particionamento(Array, start, end);
         quick_sort(Array, start, pivotIndex - 1);
         quick_sort(Array, pivotIndex + 1, end);
     }
 };
 
-const particionamento = (Array, start, end) => {
+const particionamento = (ar, start, end) {
     const pivot = Array[end];
     let i = start - 1;
 
