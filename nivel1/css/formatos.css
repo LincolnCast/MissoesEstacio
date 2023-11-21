@@ -1,14 +1,10 @@
 html, body {
       background-color: #f0947c;
-      height: 95%;
+      height: 90%;
       width: 100%;
 }
 
-@charset "UTF-8"
-/* Responsividade */
-@media only screen and (max-width: 100%){
-
-}
+@media only screen and (max-width: 90%){};
 
 * {
       font-family: 'Times New Roman', Times, serif;
@@ -145,11 +141,10 @@ form {
 
 
 .container{
-      width: 70%;
+      width: 60%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      margin: 0 auto;
 }
  
 .col-md-14{

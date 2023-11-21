@@ -1,20 +1,18 @@
-@charset "UTF-8"
-
 .painel *{
    align-items: center;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .painel {
-   width: 100%;
-   margin: 10px 20px;
    display: flex;
-   flex-wrap: wrap;
-   justify-content:space-between;
+   justify-content: center;
    align-items: stretch;
    justify-items: center;
    gap: 10px;
-   padding: 10px 20px;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-content: center;
+   padding: 30px;
 }
 
 .painel-item {
@@ -25,13 +23,6 @@
    border-radius: 10px;
    text-align: center;
 }
-
-/*.painel-item {
-   flex-basis: 31%;
-   padding: 0;
-   background-color: #e8ddb3;
-   
-}*/
 
 img {
    width: 100%;

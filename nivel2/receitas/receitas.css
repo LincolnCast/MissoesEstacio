@@ -1,0 +1,10 @@
+html, body {
+    background-color: #f0947c;
+    height: 95%;
+    width: 100%;
+}
+
+.pnlCatalogo {
+    display: flex;
+    flex-wrap: wrap; 
+}
