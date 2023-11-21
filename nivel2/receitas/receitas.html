@@ -69,8 +69,26 @@
          }
       ];
 
-      function preencherCatalogo() {
+      function getListaIngredientes(ingredientes){
+         const listaHTML = ingrdientes.map(ingrdiente => `<li>${ingrdiente}</li>`).reduce((acc, item) => acc + item, '');
+         return `<li>${listaHTML}</li>`;
+      }
+      
+      function getcard(receita) {
+
          
+      }
+
+      function preencherCatalogo() {
+         const pnlCatalogo = document.querySelector('.pnlCatalogo');
+
+         const paineisReceitasHTML = receitas.map(receita => getcard(receita)).reduce((acc, item) => acc + item, '');
+         pnlCatalogo.innerHTML = paineisReceitasHTML;
+
+      }
+
+      window.onload = function() {
+         preencherCatalogo ();
       }
      </script>
 <!--      <div class="painel">
