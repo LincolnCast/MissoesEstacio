@@ -3,46 +3,15 @@
 html, body {
     width: 100%;
     height: 100%;
- }
- .nav {
-   background-color: #050505;
-   padding: 0;
-   position: fixed;
-   top: 0;
-   width: 100%;
-   height: 35px;
 }
 
-.nav-list {
-   list-style-type: none;
-   display: flex;
-   margin: 0;
-   padding: 0;
-}
-
-.nav-item {
-   margin: 0;
-}
-
-.nav-item a {
-   text-decoration: none;
-   font-weight: bolder;
-}
-
-.nav-item a:hover {
-   text-decoration: none;
-   color: rgb(3, 104, 255);
-   font-weight: normal;
+.nav {
+   background-color: #000;
 }
 
 .conteudo {
-   /*position: absolute;
-   margin-bottom: 50px;
-    top: 30%;*/
     height: 100%;
-    width: 99%;
-    margin: 35px 5px;
-    padding: 10% 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -61,13 +30,12 @@ html, body {
 }
  
 /* Rodapé */
-footer {
-   padding-top: 15px;
-   background-color: #050505;
-   color: #fff;
-   text-align: center;
-   position: fixed;
-   bottom: 0;
-   width: 100%;
-   height: 50px;
+.card-footer {
+    background-color: #000;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

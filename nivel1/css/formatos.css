@@ -1,92 +1,23 @@
-html, body {
-      background-color: #f0947c;
-      height: 90%;
-      width: 100%;
-}
-
-@media only screen and (max-width: 90%){};
-
-* {
+* { 
+      margin: 0;
+      padding: 0;
       font-family: 'Times New Roman', Times, serif;
 }
+body {
+      display: flex;
+      min-height: 100vh;
+      background-color: #f0947c;
+      flex-direction: column;
+      justify-content: space-between
+}
 
-/* Menu missoes (fora da missão)*/
+/*@media only screen and (max-width: 80%){};
+
+/* Menus*/
 .nav {
-      background-color: #050505;
-      padding: 0;
-      position: fixed;
-      top: 0;
-      left: 10;
-      width: 100%;
-      height: 35px;
-}
-
-.nav-list {
-      list-style-type: none;
-      display: flex;
-      margin: 0;
-      padding: 0;
-}
-
-.nav-item {
-      margin: 10px;
-      margin-top: 0;
-}
-
-.nav-item a {
-      text-decoration: none;
-      font-weight: bolder;
-}
-
-.nav-item a:hover {
-      text-decoration: none;
-      color: rgb(3, 104, 255);
-      font-weight: normal;
-}
-
- /* Menu das paginas*/
-.menu {
-      background-color: #050505;
-      padding: 0;
-      position: fixed;
-      top: 35px;
-      left: 10;
-      width: 100%;
-      height: 35px;
-}
-
-.menu-list {
-      list-style-type: none;
-      display: flex;
-      margin: 0;
-      padding: 0;
-}
-
-.menu-item {
-      margin: 10px;
-}
-
-.menu-item-ativo {
-      margin: 10px;
-}
-
-.menu-item a {
-      text-decoration: none;
-      color: #d6d1d1;
-      font-weight: bold;
-}
-
-.menu-item a:hover {
-      text-decoration: underline;
-      color: #636262;
-      font-weight: normal;
-}
-
-.active {
-      margin-bottom: 0;
-      color: #d6d1d1;
-      text-decoration: underline;
-      font-weight: normal;
+      align-items: center;
+      height: 60px;
+      background-color: #000;
 }
 
 /* Conteudo da Home */
@@ -94,8 +25,9 @@ html, body {
       height: calc(100vh - 100px);
       width: 100%;
       display: flex;
+      align-items: center;
       flex-direction: column;
-      align-content: stretch;
+      align-content: center;
       justify-content: center;
 }
   
@@ -124,16 +56,13 @@ html, body {
  
  /* Formulario do cadastro */
 form {
-      margin-top: 70px;
-      width: 100%;
       display: flex;
       flex-direction: column;
-      align-content: center;
       justify-content: space-between;
 }
 
 .titulo-cadastro{
-      margin-top: 20px;
+      margin-top: 5px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -141,6 +70,7 @@ form {
 
 
 .container{
+      overflow-y: auto;
       width: 60%;
       display: flex;
       flex-direction: column;
@@ -170,17 +100,13 @@ label {
 }
  
 /* Rodapé das paginas */
-footer {
-      margin: 0;
-      background-color: #050505;
-      position: fixed;
-      bottom: 0;
+.card-footer {
+      background-color: #000;
       width: 100%;
-      height: 50px;
-}
-
-footer p {
-      margin: 10px;
-      color: #fff;
-      text-align: center;
+      height: 25px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center
 }
