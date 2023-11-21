@@ -1,34 +1,29 @@
-@media only screen and (max-width: 90%) {};
+/*@media only screen and (max-width: 90%) {};*/
 
-html, body {
-    width: 100vh;
-    height: 100vh;
+html {
     margin: 0;
     padding: 0;
 }
+
 body {
+    min-width: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .nav {
    background-color: #000;
 }
-.main{
-    height: 90vh;
-    margin: 35px 0px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 .conteudo {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
     align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    
+
 }
   
 .titulo-conteudo {
@@ -41,9 +36,11 @@ body {
     font-size: 25px;
 }
  
-/* Rodapé */
+/* Rodapé 
 .card-footer {
-    background-color: #000;
-    height: 50px;
-
-}
+    bottom: 0;
+    background-color: #000; 
+    width: 100%;
+    height: 35px;
+    text-align: center;
+}*/
