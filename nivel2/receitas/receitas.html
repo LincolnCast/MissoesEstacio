@@ -31,7 +31,7 @@
      </div>
 
      <script>
-      const receita = [
+      const receitas = [
          {
             id: '001',
             titulo: 'Arroz de Couve-Flor',
@@ -97,7 +97,7 @@
       function preencheCatalogo() {
          const pnlCatalogo = document.querySelector('.pnlCatalogo');
 
-         const paineisReceitasHTML = receitas.map(receita => getCard(receita)).reduce((acc, item) => acc + item, '');
+         const paineisReceitasHTML = receitas.map(receita => getCard(receita)) .reduce((acc, item) => acc + item, '');
 
          pnlCatalogo.innerHTML = paineisReceitasHTML;
 
