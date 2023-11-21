@@ -35,12 +35,11 @@ body {
     text-align: center;
     font-size: 25px;
 }
- 
-/* Rodapé 
+/*Rodapé*/ 
 .card-footer {
     bottom: 0;
     background-color: #000; 
     width: 100%;
     height: 35px;
     text-align: center;
-}*/
+}
