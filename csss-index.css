@@ -1,45 +1,25 @@
-/*@media only screen and (max-width: 90%) {};*/
-
-html {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    min-width: 100vh;
+body{
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-.nav {
+.nav{
    background-color: #000;
 }
-.conteudo {
-    flex-grow: 1;
+.card-body{
+    flex: 1;
     display: flex;
     flex-direction: column;
+    justify-items: center;
+    justify-content: space-evenly;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 100%;
-    
-
-}
-  
-.titulo-conteudo {
-    text-align: center;
-    font-size: 25px;
 }
 
-.descricao-conteudo {
+.card-footer{
     text-align: center;
-    font-size: 25px;
+    background-color: #000;
 }
-/*Rodapé*/ 
-.card-footer {
-    bottom: 0;
-    background-color: #000; 
-    width: 100%;
-    height: 35px;
+.card-text, .card-title{
     text-align: center;
 }
