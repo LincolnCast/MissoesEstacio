@@ -21,3 +21,6 @@ body{
     text-align: center;
     background-color: #000;
 }
+.card-text, .card-title{
+    text-align: center;
+}

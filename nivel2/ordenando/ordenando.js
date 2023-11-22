@@ -42,27 +42,52 @@ const selection_sort = (Array) => {
     }
 };
 
-const quick_sort = (Array, start, end) {
-    if(start < end) {
-        let pivotIndex = particionamento(Array, start, end);
-        quick_sort(Array, start, pivotIndex - 1);
-        quick_sort(Array, pivotIndex + 1, end);
+//const quick_sort = (Array, start, end) => {
+//    if(start < end) {
+//        let pivotIndex = particionamento(Array, start, end);
+//        quick_sort(Array, start, pivotIndex - 1);
+//        quick_sort(Array, pivotIndex + 1, end);
+//    }
+//};
+
+const quick_sort = (Array, start, end) => {
+    if (start >= end) {
+        return;
     }
+    let index = particionamento(Array, start, end);
+    quick_sort(Array, start, index - 1);
+    quick_sort(Array, index + 1, end);
 };
 
-const particionamento = (ar, start, end) {
-    const pivot = Array[end];
-    let i = start - 1;
+//const particionamento = (ar, start, end) => {
+//    const pivot = Array[end];
+//    let i = start - 1;
+//
+//    for(let j = start; j < end; j++) {
+//        if(Array[j] < pivot) {
+//            i++;
+//            swap(Array, i, j);
+//        }
+//    }
+//
+//    swap(Array, i + 1, end);
+//    return i + 1;
+//};
+const particionamento = (Array, start, end) => {
+    const pivotValue = Array[end];
+    let pivotIndex = start;
 
-    for(let j = start; j < end; j++) {
-        if(Array[j] < pivot) {
-            i++;
-            swap(Array, i, j);
+    for (let i = start; i < end; i++) {
+        if (Array[i] < pivotValue) {
+
+//        [Array[i], Array[pivotIndex]] = [Array[pivotIndex], Array[i]];
+            swap(Array, pivotIndex, i);
+            pivotIndex++;
         }
     }
-
-    swap(Array, i + 1, end);
-    return i + 1;
+//    [Array[pivotIndex], Array[end]] = [Array[end], Array[pivotIndex]]
+    swap(Array, pivotIndex, end);
+//    return pivotIndex;
 };
 
 function add() {
@@ -74,12 +99,14 @@ function add() {
     node.appendChild(valor);
 
     lista.appendChild(node);
+    input.value=""
+    input.focus();
 }
 
 function ordenar() {
     const listaValores = document.getElementById("valores");
     const listaSelecao = document.getElementById("algoritmo");
-    const vetor = Array.from(listaValores.children) .map(item => parseInt(eval(item.innerHTML)));
+    const vetor = Array.from(listaValores.children).map(item => parseInt(eval(item.innerHTML)));
 
     const selectedIndex = listaSelecao.selectedIndex;
     let algoritmo;
@@ -107,7 +134,7 @@ function ordenar() {
 
 function misturar() {   
     const listaValores = document.getElementById("valores");
-    const vetor = Array.from(listaValores.children) .map(item => parseInt(eval (item.innerHTML)));
+    const vetor = Array.from(listaValores.children).map(item => parseInt(eval (item.innerHTML)));
 
     shuffle (vetor, vetor.length * 2);
 
