@@ -57,6 +57,7 @@ body {
  /* Formulario do cadastro */
 form {
       display: flex;
+      flex-wrap: wrap;
       flex-direction: column;
       justify-content: space-between;
 }
@@ -100,13 +101,10 @@ label {
 }
  
 /* Rodapé das paginas */
-.card-footer {
+.card-footer{
+      text-align: center;
       background-color: #000;
-      width: 100%;
-      height: 25px;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center
-}
+  }
+  .card-text, .card-title{
+      text-align: center;
+  }
