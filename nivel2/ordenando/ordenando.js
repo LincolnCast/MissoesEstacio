@@ -1,5 +1,5 @@
 const swap = (Array, pos1, pos2) => {
-    [Array[pos1],Array[pos2]] = [Array[pos2], Array[pos1]];
+    [Array[pos1], Array[pos2]] = [Array[pos2], Array[pos1]];
 };
 
 const shuffle = (Array, numSwaps) => {
@@ -42,52 +42,36 @@ const selection_sort = (Array) => {
     }
 };
 
-//const quick_sort = (Array, start, end) => {
-//    if(start < end) {
-//        let pivotIndex = particionamento(Array, start, end);
-//        quick_sort(Array, start, pivotIndex - 1);
-//        quick_sort(Array, pivotIndex + 1, end);
-//    }
-//};
+const particionamento = (Array, start, end) => {
+        let pivot = Array[0];
+        let i = 1;
+        let j = i + 1;
 
-const quick_sort = (Array, start, end) => {
-    if (start >= end) {
-        return;
-    }
-    let index = particionamento(Array, start, end);
-    quick_sort(Array, start, index - 1);
-    quick_sort(Array, index + 1, end);
+        while (i <= j) {
+            while (Array[i] < pivot);
+                i++;
+        }
+        while (Array[j] > pivot) {
+            j--;
+        }
+        if (i <= j) {
+            swap(Array, i, j);
+            i++;
+            j--;
+        }
 };
 
-//const particionamento = (ar, start, end) => {
-//    const pivot = Array[end];
-//    let i = start - 1;
-//
-//    for(let j = start; j < end; j++) {
-//        if(Array[j] < pivot) {
-//            i++;
-//            swap(Array, i, j);
-//        }
-//    }
-//
-//    swap(Array, i + 1, end);
-//    return i + 1;
-//};
-const particionamento = (Array, start, end) => {
-    const pivotValue = Array[end];
-    let pivotIndex = start;
-
-    for (let i = start; i < end; i++) {
-        if (Array[i] < pivotValue) {
-
-//        [Array[i], Array[pivotIndex]] = [Array[pivotIndex], Array[i]];
-            swap(Array, pivotIndex, i);
-            pivotIndex++;
+const quick_sort = (Array, start, end) => {
+        if (Array.length > 1) {
+            let index = particionamento(Array, start, end);
+            if (start < index - 1) {
+                quick_sort(Array, start, index - 1);
+            }
+            if (index < end) {
+                quick_sort(Array, index, end);
+            }
         }
-    }
-//    [Array[pivotIndex], Array[end]] = [Array[end], Array[pivotIndex]]
-    swap(Array, pivotIndex, end);
-//    return pivotIndex;
+        return Array;
 };
 
 function add() {
