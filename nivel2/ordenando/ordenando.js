@@ -42,36 +42,27 @@ const selection_sort = (Array) => {
     }
 };
 
-const particionamento = (Array, start, end) => {
-        let pivot = Array[0];
-        let i = 1;
-        let j = i + 1;
-
-        while (i <= j) {
-            while (Array[i] < pivot);
-                i++;
-        }
-        while (Array[j] > pivot) {
-            j--;
-        }
-        if (i <= j) {
-            swap(Array, i, j);
-            i++;
-            j--;
-        }
+const quick_sort = (arr, inicio = 0, fim = arr.length - 1) => {
+    if (inicio < fim) {
+      let pivotIndex = partition(arr, inicio, fim);
+      quick_sort(arr, inicio, pivotIndex - 1);
+      quick_sort(arr, pivotIndex + 1, fim);
+    }
+    return (arr);
 };
-
-const quick_sort = (Array, start, end) => {
-        if (Array.length > 1) {
-            let index = particionamento(Array, start, end);
-            if (start < index - 1) {
-                quick_sort(Array, start, index - 1);
-            }
-            if (index < end) {
-                quick_sort(Array, index, end);
-            }
-        }
-        return Array;
+  
+const partition = (arr, inicio, fim) => {
+  let pivot = arr[fim];
+  let i = inicio - 1;
+  for (let j = inicio; j < fim; j++) {
+    if (arr[j] <= pivot) {
+      i++;
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+  }
+  [arr[i + 1], arr[fim]] = [arr[fim], arr[i + 1]];
+  return i + 1;
+  
 };
 
 function add() {
