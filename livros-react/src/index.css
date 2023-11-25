@@ -10,4 +10,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+  }
+
+  .tabela-livros {
+    border-collapse: separate;
+    border-spacing: 10px;
+  }
+  
