@@ -2,15 +2,24 @@ import React from 'react';
 import './App.css';
 import LivroLista from './LivroLista';
 
-function App() {
+/*function App() {
   return (
     <div className="App">
       <header className="App-header">
       </header>
       <main>
         {}
-        <LivroLista />
+        <LivroLista/>
       </main>
+    </div>
+  );
+}*/
+
+function App() {
+  return (
+    <div className="App">
+      <LivroLista/>
+      
     </div>
   );
 }
